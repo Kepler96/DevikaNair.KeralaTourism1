@@ -1,0 +1,320 @@
+if(email.value.trim()==""||pwd.value.trim()==""||rpwd.value.trim()==""||number.value.trim()=="")
+        {
+            alert("Fields cannot be empty");
+            return false;
+        }
+
+            else if(pwd.value.length<=4){
+            alert("Password is too short");
+            pwd.style.border="2px solid red";
+            return false;
+        }
+        else if(pwd.value.length<=6){
+            alert("Password is of medium strength");
+            pwd.style.border="2px solid green";
+            return false;
+        }
+
+        else if(pwd.value!=rpwd.value){
+            alert("Passwords must match");
+            return false;
+        }
+        else if(passw.tex){}
+        else {
+            return true;
+        }
+
+    }
+}
+
+
+if (pwd.length<=5)
+          {
+          alert("Too short");
+          pwd.style.border="2px solid red";
+          return false;
+          }
+           else if(pwd.length==8 || pwd.length<=10)
+          {
+          pwd.style.border="2px solid orange";
+           return false;
+          }
+          else if(pwd!=rpwd)
+          {
+          alert("Passwords must matc;h")
+          return false;
+          }
+
+
+
+
+          if (pwd.trim() != '' && email.trim() != '' && number.trim() != '') 
+{
+  if (email.match(emailReg)) 
+  {
+    if(number.match(phoneno)) 
+    {
+      if (pwd.match(passw)) 
+      { pwd.style.border="2px solid green";
+        alert("All type of validation has done on OnSubmit event.");
+        return true;
+      } 
+      else 
+      { 
+          
+          return false;
+      }
+    } 
+    else 
+    {
+     alert("Must contain 10 digits!");
+    return false;
+    }
+  } 
+  else 
+  {
+  alert("Invalid Email Address...!!!");
+  return false;
+  }
+  } 
+else 
+{
+alert("All fields are required.....!");
+return false;
+
+
+
+if(email.trim()==""||pwd.trim()==""||rpwd.trim()==""||number.trim()=="")
+    {
+        alert("Fields cannot be empty");
+        return false;
+    }
+
+    if(pwd.length<=6){
+        alert("Password is too short");
+        pwd.style.border="2px solid red";
+        return false;
+    }
+    if(pwd.length>=8 && pwd.length<=10){
+        alert("Password is of medium strength");
+        pwd.style.border="2px solid orange";
+        return false;
+    }
+
+    if(pwd !=rpwd){
+        alert("Passwords must match");
+        return false;
+    }
+    if(pwd.match){
+        pwd.style.border="2px solid green";
+        return true;
+    }
+    else{
+        return false;
+    }
+<label for="error" id="error"></label>
+
+if(pwd.value.length<=6){
+        alert("Password is too short");
+        pwd.style.border="2px solid red";
+        pwd.focus();
+        return false;
+        
+    }
+    else{
+    return true;
+    }
+}
+
+
+
+if(email.value.match(emailReg)){
+       if(pwd.value.match(passw)){
+           if(number.value.match(phoneno))
+           {
+               alert("Validation done");
+               number.focus();
+               return true;
+           }
+           else if(number.value.length<10)
+           { 
+               alert("Number should contain 10 digits");
+               number.focus();
+               return false; 
+            }
+
+    
+        else if(pwd.value.length<=6){
+            alert("Password is too short");
+            pwd.style.border="2px solid red";
+            pwd.focus();
+            return false;
+        }
+        else  if(pwd.value.length<8){
+            alert("Password is of medium strength");
+            pwd.style.border="2px solid orange";
+            pwd.focus();
+            return false;
+        }
+
+        else if(pwd.value != rpwd.value){
+            alert("Passwords must match");
+            pwd.focus();
+            return false;
+        }
+        else{
+            pwd.style.border="2px solid green";
+            pwd.focus();
+            return true;
+        }
+        }
+        else{
+            alert("Password is invalid");
+            pwd.focus();
+            return false;
+        }
+    }
+    else{
+        alert("Mail is invalid");
+        email.focus();
+        return false;
+    }
+    
+
+    
+    
+    
+if(emailReg.test(email.value))
+{
+   if(phoneno.test(number.value))
+   {
+       if(passw.test(pwd.value))
+       {   error1.innerHTML="Strong";
+           error.innerHTML="Valid";
+           error2.innerHTML="Valid";
+           error1.style.color="green";
+           error.style.color="green";
+           error2.style.color="green";
+           return true;
+       }
+       else if(pwd.value.length<=5)
+       {
+           error1.innerHTML="Too weak invalid";
+           error1.style.color="red";
+           return false;
+       }
+       else if(pwd.value.length<=8)
+       {
+           error1.innerHTML="Medium invalid";
+           error1.style.color="orange";
+           return false;
+       }
+       else if(pwd.value != rpwd.value)
+       {
+           error3.innerHTML="Passwords must match";
+           error3.style.color="Red";
+           return false;
+       }
+    } 
+    else
+    {
+        error2.innerHTML="Invalid";
+        error2.style.color="Red";
+        return false;
+    }
+}
+else
+{
+    error.innerHTML="Invalid";
+    error.style.color="Red";
+    return false;
+}
+
+else if(phoneno.test(number.value))
+{  
+    error2.innerHTML="Valid";
+    error2.style.color="green";
+    return true;
+}
+
+
+else if(passw.test(pwd.value))
+{   
+    error1.innerHTML="Strong";
+    error1.style.color="green";
+    return true;
+}
+
+else if(pwd.value.length<=5)
+{
+    error1.innerHTML="Too weak invalid";
+    error1.style.color="red";
+    return false;
+}
+       
+else if(pwd.value.length<=8)
+{
+    error1.innerHTML="Medium invalid";
+    error1.style.color="orange";
+    return false;
+}
+
+else if(pwd.value != rpwd.value)
+{
+    error3.innerHTML="Passwords must match";
+    error3.style.color="Red";
+    return false;
+}
+    if(emailReg.test(email.value))
+{
+    error.innerHTML="Valid";
+    error.style.color="green";
+    return true;
+}
+
+else if(phoneno.test(number.value))
+{  
+    error2.innerHTML="Valid";
+    error2.style.color="green";
+    return true;
+}
+
+
+else if(passw.test(pwd.value))
+{   
+    error1.innerHTML="Strong";
+    error1.style.color="green";
+    return true;
+}
+
+else if(pwd.value.length<=5)
+{
+    error1.innerHTML="Too weak invalid";
+    error1.style.color="red";
+    return false;
+}
+       
+else if(pwd.value.length<=8)
+{
+    error1.innerHTML="Medium invalid";
+    error1.style.color="orange";
+    return false;
+}
+
+else if(pwd.value != rpwd.value)
+{
+    error3.innerHTML="Passwords must match";
+    error3.style.color="Red";
+    return false;
+}
+    
+else
+{
+    error.innerHTML="Invalid";
+    error.style.color="Red";
+    error1.innerHTML="Invalid";
+    error1.style.color="Red";
+    error2.innerHTML="Invalid";
+    error2.style.color="Red";
+    return false;
+}

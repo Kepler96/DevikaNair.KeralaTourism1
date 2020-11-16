@@ -1,0 +1,218 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-size: cover;
+    
+}
+
+header{
+    background-color: paleturquoise;
+    height: 5em;
+}
+
+.b2{
+    background-color: black;
+}
+
+.head-tag{ float: right;
+    margin-top: 34px;
+    margin-right: 30px;   
+}
+
+.head-tag a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+.head-tag a:hover{
+    background-color: blue;
+    color: powderblue;
+    transition: 5s ease-in-out;
+}
+
+.Aside{
+    color: black;
+    margin-top: 20px;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+#h1{
+    color: black;
+    
+}
+
+
+.t1{
+    float: right;
+    color: brown;
+    font-style: italic;
+    margin-right: 45%;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.b{
+    background: linear-gradient(-45deg, #ecdad5, #e9aec4, #a0d4e7, #63c7b0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.b1{
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+}
+    
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+.contents{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.pbox{ background: linear-gradient(-45deg, #52eead, #3ce7e7, #187192, #665bcc);
+    
+     border: 2px solid black;
+     width: 20%;
+     float: right;
+     height: 25em;
+     padding: 5px;
+     margin-right: 35px;
+     text-align: justify;
+}
+
+.pbox a{
+    color: red;
+}
+.pbox h3{ color: white;
+    text-align: center;
+}
+
+.pbox1{
+    margin-left: 20px;
+    border: 1px solid white;
+    height: 10em;
+    margin-right: 20px;
+    text-align: center;
+    width: 20%;
+    float: right;
+    margin-bottom: 5px;
+    background:linear-gradient(-45deg, #1cf198, #13c5c5, #158fbb, #230ec0) ;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-style: italic;
+}
+
+.pbox1 a{text-decoration: none;
+    
+color: white;}
+
+.pbox2 a{text-decoration: none;
+    color: white;}
+
+.pbox2{
+    margin-left: 20%;
+    border: 1px solid white;
+    height: 10em;
+    margin-right: 5px;
+    text-align: center;
+    width: 20%;
+float: left;
+background:linear-gradient(-45deg, #1cf198, #13c5c5, #158fbb, #230ec0) ;
+    
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-style: italic;
+
+    
+}
+
+footer{
+    color: white;
+    background-color: black;
+    height: 1.5em;
+    margin-top: 32%;
+    text-align: center;
+}
+
+.pbox3{ background: linear-gradient(-45deg, #1cf198, #13c5c5, #158fbb, #230ec0);
+    
+    border: 2px solid black;
+    width: 20%;
+    float: right;
+    height: 25em;
+    padding: 5px;
+    margin-right: 35px;
+    text-align: justify;
+}
+
+.pbox3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.carousel { 
+    height: 420px;
+}
+
+.item {
+    height: 420px;
+    background-color: lightgrey;
+}
+
+.item > img {
+
+    
+    margin: 0%;
+    padding-top: 15px;
+}
+
+p {
+    padding-bottom:5px;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: cornflowerblue;
+}
+ 
+.navbar-brand img {height: 2em;}
+
+.dropdown {
+    
+    padding: 1em;
+    
+}
+.carousel-inner > .item > img {
+    width:640px;
+    height:360px;
+}
+.pbox3{
+      text-align: center;
+       ;
+}
